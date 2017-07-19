@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+	<title>task7</title>
+<link rel="stylesheet" href="bootstrap.css">
+<style>
+*{
+	font-family: '微软雅黑','黑体',sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body{background-color: #EFF0F1;}
+header{
+	width: 100%;
+	height: 50px;
+	background-color: #5AC0CE;
+	color: white;
+	font-size: 30px;
+	line-height: 50px;
+	padding: 0 10px;
+}
+.input-group{
+	width: 90%;
+	text-align: center;
+	margin: 15px auto;
+}
+input::-ms-input-placeholder{text-align: center;} 
+input::-webkit-input-placeholder{text-align: center;} 
+.row{
+	width: 90%;
+	border: 1px solid #ccc;
+	background-color: white;
+	padding: 0;
+	margin: 15px auto;
+}
+.title{
+	font-size: 20px;
+	color: orange;
+	text-align: center;
+	line-height: 50px;
+	border-bottom: 1px solid orange;
+}
+.typ{
+	width: 90%;
+	height: 100px;
+	background-color: #5AC0CE;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	line-height: 100px;
+	margin: 3% auto;
+}
+.col-md-12 p{
+	color: gray;
+	text-align: center;
+}
+#tab{
+	clear: both;
+	position: relative;
+	bottom: 0;
+	left: 46%;
+}
+.cir{
+	width: 5px;
+	height: 5px;
+	float: left;
+	border: 5px solid #CCC;
+	border-radius: 5px;
+	margin: 5px;
+}
+.cir:first-child{border: 5px solid #5AC0CE;}
+#siw{
+	border-left: 25px solid orange;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	position: absolute;
+	top: 75%;
+	right: 6%;
+}
+</style>
+</head>
+<body>
+	<header><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></header>
+	<div class="input-group input-group-lg">
+ 		<input type="text" class="form-control" placeholder="上次游戏：捉鬼猜词版" aria-describedby="sizing-addon1">
+ 		<span class="input-group-btn"><button class="btn btn-default" type="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button></span>
+	</div>
+	<div class="row">
+		<div class="title"><p>捉鬼游戏</p></div>
+		<div class="col-md-12">
+			<div class="typ">简化版</div>
+			<p>有1133个用户正在玩此款游戏</p>
+		</div>
+		<div class="col-md-12">
+			<div class="typ">猜词版</div>
+			<p>有1133个用户正在玩此款游戏</p>
+		</div>
+		<div class="col-md-12">
+			<div class="typ">白痴版</div>
+			<p>有1133个用户正在玩此款游戏</p>
+		</div>
+		<div id="siw"></div>
+		<div id="tab">
+			<div class="cir"></div>
+			<div class="cir"></div>
+			<div class="cir"></div>
+			<div class="cir"></div>
+			<div class="cir"></div>
+		</div>
+	</div>
+</body>
+</html>
