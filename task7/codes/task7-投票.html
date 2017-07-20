@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
 	<title>投票页</title>
+<script src="jQuery.min.js"></script>
 <link rel="stylesheet" href="bootstrap.css">
 <style>
 *{
@@ -50,12 +51,64 @@ header{
 }
 p{
 	color: white;
-	text-indent: 15px;
+	font-size: 15px;
+	text-indent: 20px;
+}
+.row{
+	width: 60%;
+	/*border: 1px solid black;*/
+	margin: 0 auto;
+	padding: 0 3vw;
 }
 .col-md-4{
-	width: 100px;
-	height: 100px;
-	border: 1px solid white;
+	width: 15vw;
+	height: 15vw;
+	border: 3px solid white;
+	margin: 1vw;
+	padding: 0;
+	box-sizing: content-box;
+}
+.char{
+	width: 15vw;
+	height: 12vw;
+	color: gray;
+	font-size: 2em;
+	text-align: center;
+	line-height: 12vw;
+	background-color: #F3C881;
+}
+.num{
+	width: 15vw;
+	height: 3vw;
+	color: white;
+	text-align: center;
+	line-height: 3vw;
+	background-color: #82AF9B;
+}
+/* .col-md-4:hover{
+	content: "";
+	width: 40px;
+	height: 10px;
+	background: url(../pic/投票选项.png) no-repeat;
+	position: absolute;
+	top: 12vw;
+} */
+footer{
+	width: 100%;
+	height: 80px;
+	color: white;
+	background-color: #5AC0CE;
+	position: fixed;
+	bottom: 0;
+}
+footer div{
+	width: 60%;
+	height:50px;
+	font-size: 2em;
+	text-align: center;
+	line-height: 50px;
+	background-color: #F8B445;
+	margin: 15px auto; 
 }
 </style>
 </head>
@@ -74,19 +127,54 @@ p{
 		<p>点击得票数最多人的头像</p>
 	</div>
 	<div class="row">
-		<div class="col-md-4">水民</div>
-		<div class="col-md-4">水民</div>
-		<div class="col-md-4">警察</div>
+		<div class="col-md-4">
+			<div class="char">水民</div>
+			<div class="num">1号</div>
+		</div>
+		<div class="col-md-4">
+			<div class="char">水民</div>
+			<div class="num">2号</div>
+		</div>
+		<div class="col-md-4">
+			<div class="char">警察</div>
+			<div class="num">3号</div>
+		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-4">水民</div>
-		<div class="col-md-4">水民</div>
-		<div class="col-md-4">警察</div>
+		<div class="col-md-4">
+			<div class="char">水民</div>
+			<div class="num">4号</div>
+		</div>
+		<div class="col-md-4">
+			<div class="char">水民</div>
+			<div class="num">5号</div>
+		</div>
+		<div class="col-md-4">
+			<div class="char">警察</div>
+			<div class="num">6号</div>
+		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-4">水民</div>
-		<div class="col-md-4">水民</div>
-		<div class="col-md-4">警察</div>
+		<div class="col-md-4">
+			<div class="char">水民</div>
+			<div class="num">7号</div>
+		</div>
+		<div class="col-md-4">
+			<div class="char">水民</div>
+			<div class="num">8号</div>
+		</div>
+		<div class="col-md-4">
+			<div class="char">警察</div>
+			<div class="num">9号</div>
+		</div>
 	</div>
+	<footer>
+		<div id="btm">投死</div>
+	</footer>
 </body>
+<script>
+$('.col-md-4').mouseover(function(){
+	
+});
+</script>
 </html>
