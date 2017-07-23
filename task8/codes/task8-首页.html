@@ -51,7 +51,7 @@ li{
 #bgp{
 	/*background: url(../pic/背景图.png) no-repeat;*/
 	padding: 0;
-	margin-top: -10px;
+	margin: 0;
 }
  /*#bgp>img{
 	display: block; 
@@ -76,29 +76,27 @@ li{
 	background-color: #28B078; 
 }
 .row{
-	width: 1200px;
-	margin: 0 auto;
+	width:1200px;
+	margin: 0 auto 30px auto;
 	padding: 10px 0;
-	border: 1px solid black;
+	/*margin-bottom: 30px;*/
 }
 .col-md-3>img{
 	display: block;
 	margin: 0 auto;
 }
-/*.col-md-3:last-child{
-	margin-left: 50px; 
-}*/
 .title{
 	font-size: 20px;
 	font-weight: bold;
 	text-align: center;
 	margin: 5px;
 }
-#lside{
+#rside{
 	height: auto;
-	border-left: 1px solid black;
-	margin-left: 10px;
-	clear: both;
+	border-left: 3px dashed #CCC;
+	margin:20px 50px 0 0;
+	padding: 10px;
+	/*自适应怎么改？*/
 }
 .detail{
 	width: 200px;
@@ -106,6 +104,29 @@ li{
 	margin: 0 auto;
 }
 .glyphicon,.num{color: #28B078;}
+.roud{
+	width: 50px;
+	height: 50px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid #CCC;
+	border-radius: 50px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+.discr{
+	width: 80%;
+	/*vertical-align: center;*/
+	text-align: left;
+}
+.arr{
+	display: block;
+	position: relative;
+	left: 120px;
+	bottom: 35px;
+}
 </style>
 </head>
 <body>
@@ -133,23 +154,89 @@ li{
 		<div class="col-md-3">
 			<img src="../pic/rocket.png" alt="">
 			<p class="title">高效</p>
-			<p class="detail">将五到七年的成长时间，缩短到一到三年</p>
+			<p class="detail">将五到七年的成长时间，缩短到一到三年
+			</p>
 		</div>
 		<div class="col-md-3">
 			<img src="../pic/achieve.png" alt="">
 			<p class="title">规范</p>
-			<p class="detail">标准的实战教程，不会走弯路</p>
+			<p class="detail">标准的实战教程，不会走弯路
+			</p>
 		</div>
 		<div class="col-md-3">
 			<img src="../pic/shape223.png" alt="">
 			<p class="title">人脉</p>
 			<p class="detail">同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路</p>
 		</div>
-		<div id="lside">
-			<p class="num"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;12400</p>
-			<p class="ins">累计在线学习人数</p>
-			<p class="num"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;12400</p>
-			<p class="ins">累计在线学习人数</p>
+		<div class="col-md-3">
+			<div id="rside">
+				<p class="num"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;12400</p>
+				<p class="ins">累计在线学习人数</p>
+				<p class="num"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;12400</p>
+				<p class="ins">累计在线学习人数</p>
+			</div>
+		</div>
+		
+	</div>
+	<div class="title">如何学习</div>
+	<div class="row">
+		<div class="col-md-3 col-xs-3">
+			<div class="roud">1</div>
+			<p class="discr">
+				匹配当前的个人情况，寻找适合自己的岗位
+			</p>
+			<img class="arr" src="../pic/arrow.png" alt="">
+		</div>
+		<div class="col-md-3 col-xs-3">
+			<div class="roud">2</div>
+			<p class="discr" align="center">
+				了解职业发展前景，竞争压力等
+			</p>
+			<img class="arr" src="../pic/arrow.png" alt="">
+		</div>
+		<div class="col-md-3 col-xs-3">
+			<div class="roud">3</div>
+			<p class="discr">
+				掌握行业内顶级技能<br><br>
+			</p>
+			<img class="arr" src="../pic/arrow.png" alt="">
+
+		</div>
+		<div class="col-md-3 col-xs-3">
+			<div class="roud">4</div>
+			<p class="discr">
+				查看职业目标任务
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-xs-3">
+			<div class="roud">5</div>
+			<p class="discr">
+				参考学习资源，掌握技能点，逐个完成任务
+			</p>
+			<img class="arr" src="../pic/arrow.png" alt="">
+		</div>
+		<div class="col-md-3 col-xs-3">
+			<div class="roud">6</div>
+			<p class="discr" align="center">
+				加入班级，和小伙伴们一起互帮互助，一块学习
+			</p>
+			<img class="arr" src="../pic/arrow.png" alt="">
+		</div>
+		<div class="col-md-3 col-xs-3">
+			<div class="roud">7</div>
+			<p class="discr">
+				选择导师，一路引导，加速自己成长
+			</p>
+			<img class="arr" src="../pic/arrow.png" alt="">
+
+		</div>
+		<div class="col-md-3 col-xs-3">
+			<div class="roud">8</div>
+			<p class="discr">
+				完成职业技能，升级业界大牛
+			</p>
 		</div>
 	</div>
 </body>
