@@ -10,12 +10,14 @@
 	margin: 0;
 	padding: 0;
 }
+body{background-color: #FAFAFA;}
 img{
 	display: block;
 }
 header{
 	width: 100%;
 	height: auto;
+	background-color: white;
 	color: #28B078;
 	line-height: 30px;
 	text-indent: 50px;
@@ -33,7 +35,7 @@ nav{
 	line-height: 100px;
 	background-color: #28B078;
 	clear: both;
-	margin-right: -10px;
+	margin: 0;
 }
 ul{
 	float: right;
@@ -50,8 +52,11 @@ li{
 }  悬停时出现下划线 */
 #bgp{
 	/*background: url(../pic/背景图.png) no-repeat;*/
+	width: 100%;
+	height: auto;
 	padding: 0;
 	margin: 0;
+	overflow: hidden;
 }
  /*#bgp>img{
 	display: block; 
@@ -65,12 +70,13 @@ li{
 	top: -20px;
 }
 .tab{
-	width: 15px;
-	height: 15px;
+	width: 10px;
+	height: 10px;
 	border: 1px solid white;
-	border-radius: 15px;
+	border-radius: 10px;
 	float: left;
 	margin: 0 5px;
+	border-style: groove;
 }
 .tab:hover{
 	background-color: #28B078; 
@@ -126,6 +132,37 @@ li{
 	position: relative;
 	left: 120px;
 	bottom: 35px;
+}
+.info{
+	width: 270px;
+	height: 370px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	background-color: white;
+	margin: 0 auto;
+	padding: 10px;
+}
+.info>img{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+#coorp{margin: 0 auto;}
+#link{
+	width: 100%;
+	height: auto;
+	background-color: white;
+}
+table{margin: 0 auto;}
+tr{line-height: 30px;}
+td{width: 100px;}
+td::before{content: "•  ";}
+footer{
+	height: 40px;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	background-color:#28B078; 
 }
 </style>
 </head>
@@ -239,5 +276,92 @@ li{
 			</p>
 		</div>
 	</div>
+	<div class="title">优秀学员展示</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="info">
+				<img src="../pic/学员2.png" alt="">
+				<p class="title">
+					技术顾问&nbsp;&nbsp;罗大佑
+				</p>
+				<p class="detail">
+					百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网 高级技术经理，负责技术研 发、团队管理与建设。
+				</p>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="info">
+				<img src="../pic/学员4.png" alt="">
+				<p class="title">
+					技术顾问&nbsp;&nbsp;罗大佑
+				</p>
+				<p class="detail">
+					百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网 高级技术经理，负责技术研 发、团队管理与建设。
+				</p>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="info">
+				<img src="../pic/学员2.png" alt="">
+				<p class="title">
+					技术顾问&nbsp;&nbsp;罗大佑
+				</p>
+				<p class="detail">
+					百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网 高级技术经理，负责技术研 发、团队管理与建设。
+				</p>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="info">
+				<img src="../pic/学员4.png" alt="">
+				<p class="title">
+					技术顾问&nbsp;&nbsp;罗大佑
+				</p>
+				<p class="detail">
+					百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网 高级技术经理，负责技术研 发、团队管理与建设。
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="tabs">
+		<div class="tab"></div>
+		<div class="tab"></div>
+		<div class="tab"></div>
+		<div class="tab"></div>
+	</div>
+	<div class="title">战略合作企业</div>
+	<img id="coorp" src="../pic/合作商.png" alt="">
+	<div id="link">
+		<div class="title">友情链接</div>
+		<table>
+			<tr>
+				<td>手机软件</td>
+				<td>教师招聘</td>
+				<td>找工作</td>
+				<td>手机软件</td>
+				<td>教师招聘</td>
+				<td>找工作</td>
+				<td>手机软件</td>
+				<td>教师招聘</td>
+				<td>找工作</td>
+				<td>手机软件</td>
+			</tr>
+			<tr>
+				<td>手机软件</td>
+				<td>教师招聘</td>
+				<td>找工作</td>
+				<td>手机软件</td>
+				<td>教师招聘</td>
+				<td>找工作</td>
+				<td>手机软件</td>
+				<td>教师招聘</td>
+				<td>找工作</td>
+				<td>手机软件</td>
+			</tr>
+		</table>
+	</div>
+	<footer>
+		Copyright&copy;2015技能树&nbsp;All rights reserved
+	</footer>
 </body>
 </html>
