@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+
 	<title>首页</title>
 <link rel="stylesheet" href="bootstrap.css">
 <style>
@@ -15,30 +17,31 @@ header{
 	width: 100%;
 	height: auto;
 	background-color: white;
+	font-size: 1vw;
 	color: #28B078;
 	line-height: 30px;
-	text-indent: 50px;
+	text-indent: 5vw;
 }
 header>img{
 	display: block;
 	float: right;
-	margin: 0 40px;
+	margin: 0 3vw;
 }
 nav{
 	width: 100%;
-	height: 100px;
+	height: 6vw;
 	color: white;
-	font-size: 20px;
-	line-height: 100px;
+	font-size: 2vw;
+	line-height: 6vw;
 	background-color: #28B078;
 	clear: both;
 	margin: 0;
 }
-ul{
+nav ul{
 	float: right;
-	margin-right: 40px;
+	margin-right: 5vw;
 }
-li{
+nav li{
 	list-style-type: none;
 	float: left;
 	margin: 0 20px;
@@ -48,39 +51,35 @@ li{
 	border-bottom: 1px solid white;
 }  悬停时出现下划线 */
 #bgp{
-	/*background: url(../pic/背景图.png) no-repeat;*/
 	width: 100%;
 	height: auto;
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
 }
- /*#bgp>img{
-	display: block; 
-	margin-top: -10px;
-}*/
 #tabs{
-	width: 80px;
-	height: 15px;
+	/*border: 1px solid black;*/
+	width: 7vw;
+	height: 1.5vw;
 	margin: 0 auto;
 	position: relative;
-	top: -20px;
+	top: -1.5vw;
 }
 .tab{
-	width: 10px;
-	height: 10px;
+	width: 1vw;
+	height: 1vw;
 	border: 1px solid white;
-	border-radius: 10px;
+	border-radius: 1vw;
 	float: left;
-	margin: 0 5px;
+	margin: 0 0.5vw;
 	border-style: groove;
 }
 .tab:hover{
 	background-color: #28B078; 
 }
 .row{
-	width:1200px;
-	margin: 0 auto 30px auto;
+	width:90%;
+	margin: 0 auto 1vw auto;
 	padding: 10px 0;
 	/*margin-bottom: 30px;*/
 }
@@ -89,10 +88,10 @@ li{
 	margin: 0 auto;
 }
 .title{
-	font-size: 20px;
+	font-size: 1.8vw;
 	font-weight: bold;
 	text-align: center;
-	margin: 5px;
+	margin: 0.5vw;
 }
 #rside{
 	height: auto;
@@ -102,47 +101,48 @@ li{
 	/*自适应怎么改？*/
 }
 .detail{
-	width: 200px;
-	font-size: 15px;
+	width: 15vw;
+	font-size: 1.2vw;
 	margin: 0 auto;
 }
 .glyphicon,.num{color: #28B078;}
 .roud{
-	width: 50px;
-	height: 50px;
+	width: 4vw;
+	height: 4vw;
 	color: black;
 	font-weight: bold;
 	text-align: center;
-	line-height: 50px;
+	line-height: 4vw;
 	border: 1px solid #CCC;
-	border-radius: 50px;
+	border-radius: 4vw;
 	float: left;
-	margin: 0 10px 0 0;
+	margin-right: 0.8vw;
 }
 .discr{
 	width: 80%;
 	/*vertical-align: center;*/
+	font-size: 1vw;
 	text-align: left;
 }
 .arr{
 	display: block;
 	position: relative;
-	left: 120px;
-	bottom: 35px;
+	left: 5.5vw;
+	bottom: 2.5vw; 
 }
 .info{
-	width: 270px;
-	height: 370px;
+	width: 20vw;
+	height: 28vw;
 	border: 1px solid #ccc;
-	border-radius: 20px;
+	border-radius: 2vw;
 	background-color: white;
 	margin: 0 auto;
-	padding: 10px;
+	padding: 2vw;
 }
 .info>img{
 	display: block;
 	margin: 0 auto;
-	margin-bottom: 20px;
+	margin-bottom: 2vw;
 }
 #coorp{
 	display: block;
@@ -154,14 +154,18 @@ li{
 	background-color: white;
 }
 table{margin: 0 auto;}
-tr{line-height: 30px;}
-td{width: 100px;}
+tr{line-height: 3vw;}
+td{
+	width: 8vw;
+	font-size: 1vw;
+}
 td::before{content: "•  ";}
 footer{
-	height: 40px;
+	height: 4vw;
 	color: white;
+	font-size: 1.5vw;
 	text-align: center;
-	line-height: 40px;
+	line-height: 4vw;
 	background-color:#28B078; 
 }
 </style>
@@ -180,7 +184,7 @@ footer{
 		</ul>
 	</nav>
 	<div id="bgp">
-		<img src="../pic/背景图.png" alt="">
+		<img src="../pic/背景图.png"  class="img-responsive" alt="Responsive image">
 		<div id="tabs">
 			<div class="tab"></div>
 			<div class="tab"></div>
@@ -189,19 +193,19 @@ footer{
 	</div>
 	<div class="row">
 		<div class="col-md-3">
-			<img src="../pic/rocket.png" alt="">
+			<img src="../pic/rocket.png"  class="img-responsive" alt="Responsive image">
 			<p class="title">高效</p>
 			<p class="detail">将五到七年的成长时间，缩短到一到三年
 			</p>
 		</div>
 		<div class="col-md-3">
-			<img src="../pic/achieve.png" alt="">
+			<img src="../pic/achieve.png"  class="img-responsive" alt="Responsive image">
 			<p class="title">规范</p>
 			<p class="detail">标准的实战教程，不会走弯路
 			</p>
 		</div>
 		<div class="col-md-3">
-			<img src="../pic/shape223.png" alt="">
+			<img src="../pic/shape223.png"  class="img-responsive" alt="Responsive image">
 			<p class="title">人脉</p>
 			<p class="detail">同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路</p>
 		</div>
@@ -257,7 +261,7 @@ footer{
 		<div class="col-md-3 col-xs-3">
 			<div class="roud">6</div>
 			<p class="discr" align="center">
-				加入班级，和小伙伴们一起互帮互助，一块学习
+				加入班级，和小伙伴一起互帮互助，一块学习
 			</p>
 			<img class="arr" src="../pic/arrow.png" alt="">
 		</div>
@@ -280,7 +284,7 @@ footer{
 	<div class="row">
 		<div class="col-md-3">
 			<div class="info">
-				<img src="../pic/学员2.png" alt="">
+				<img src="../pic/学员2.png"  class="img-responsive" alt="Responsive image">
 				<p class="title">
 					技术顾问&nbsp;&nbsp;罗大佑
 				</p>
@@ -291,7 +295,7 @@ footer{
 		</div>
 		<div class="col-md-3">
 			<div class="info">
-				<img src="../pic/学员4.png" alt="">
+				<img src="../pic/学员4.png"  class="img-responsive" alt="Responsive image">
 				<p class="title">
 					技术顾问&nbsp;&nbsp;罗大佑
 				</p>
@@ -302,7 +306,7 @@ footer{
 		</div>
 		<div class="col-md-3">
 			<div class="info">
-				<img src="../pic/学员2.png" alt="">
+				<img src="../pic/学员2.png"  class="img-responsive" alt="Responsive image">
 				<p class="title">
 					技术顾问&nbsp;&nbsp;罗大佑
 				</p>
@@ -313,7 +317,7 @@ footer{
 		</div>
 		<div class="col-md-3">
 			<div class="info">
-				<img src="../pic/学员4.png" alt="">
+				<img src="../pic/学员4.png"  class="img-responsive" alt="Responsive image">
 				<p class="title">
 					技术顾问&nbsp;&nbsp;罗大佑
 				</p>
@@ -327,10 +331,9 @@ footer{
 		<div class="tab"></div>
 		<div class="tab"></div>
 		<div class="tab"></div>
-		<div class="tab"></div>
 	</div>
 	<div class="title">战略合作企业</div>
-	<img id="coorp" src="../pic/合作商.png" alt="">
+	<img id="coorp" src="../pic/合作商.png"  class="img-responsive" alt="Responsive image">
 	<div id="link">
 		<div class="title">友情链接</div>
 		<table>

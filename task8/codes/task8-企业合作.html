@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
 	<title>企业合作</title>
 </head>
 <style>
@@ -15,28 +16,29 @@ header{
 	width: 100%;
 	height: auto;
 	background-color: white;
+	font-size: 1vw;
 	color: #28B078;
 	line-height: 30px;
-	text-indent: 50px;
+	text-indent: 5vw;
 }
 header>img{
 	display: block;
 	float: right;
-	margin: 0 40px;
+	margin: 0 3vw;
 }
 nav{
 	width: 100%;
-	height: 100px;
+	height: 6vw;
 	color: white;
-	font-size: 20px;
-	line-height: 100px;
+	font-size: 2vw;
+	line-height: 6vw;
 	background-color: #28B078;
 	clear: both;
 	margin: 0;
 }
 nav ul{
 	float: right;
-	margin-right: 40px;
+	margin-right: 5vw;
 }
 nav li{
 	list-style-type: none;
@@ -52,18 +54,19 @@ nav li{
 	overflow: hidden;
 }
 #main{
-	width: 1000px;
+	width: 90%;
 	height: auto;
 	margin: 0 auto; 
-	font-size: 20px;
-	line-height: 40px;
+	font-size: 1.5vw;
+	line-height: 3vw;
 }
 span{color: #28B078;}
 .lside{
-	width: 120px;
+	width: 30%;
 	background-color: white;
 	border: 1px solid #CCC;
-	padding: 10px 90px;
+	padding: 10px 10%;
+	box-sizing: border-box;
 	float: left;
 	/*text-indent: 100px;*/
 }
@@ -80,39 +83,43 @@ span{color: #28B078;}
 	color: orange;
 }
 .rside{
-	width: 600px;
+	width: 60%;
 	height: auto;
 	background-color: white;
 	border: 1px solid #CCC;
-	font-size: 15px;
 	color: #ccc;
-	margin-left: 50px;
-	padding: 10px;
+	margin-left: 1.5vw;
+	padding: 1vw;
 	float: left;
 }
 #sim{float: left;}
 #sim img{
 	display: block;
+	margin: 4vw;
 	float: left;
 }
 #sim p{
-	text-indent: 2em;
+	width: 60%;
+	font-size: 1.2vw;
+	text-indent: 2.4vw;
 	float: left;
 }
 #detail{
 	clear: both;
-	text-indent: 2em;
+	font-size: 1.2vw;
+	text-indent: 2.4vw;
 }
 #place{
-	width: 1000px;
-	height: 100px;
+	width: 100%;
+	height: 1vw;
 	clear: both;
 }
 footer{
-	height: 40px;
+	height: 4vw;
 	color: white;
+	font-size: 1.5vw;
 	text-align: center;
-	line-height: 40px;
+	line-height: 4vw;
 	background-color:#28B078; 
 	/*clear: both;*/
 }
@@ -120,7 +127,7 @@ footer{
 <body>
 	<header>
 		客服热线：010-12345678
-		<img src="../pic/分享钮.png" alt="">
+		<img src="../pic/分享钮.png" class="img-responsive" alt="Responsive image">
 	</header>
 	<nav>
 		<ul>
@@ -130,7 +137,7 @@ footer{
 			<li>关于</li>
 		</ul>
 	</nav>
-	<img id="bgp" src="../pic/战略合作企业.png" alt="">
+	<img id="bgp" src="../pic/战略合作企业.png" class="img-responsive" alt="Responsive image">
 	<div id="main">
 		<p>首页><span>合作企业</span></p>
 		<div class="lside">
@@ -153,7 +160,7 @@ footer{
 		</div>
 		<div class="rside">
 			<div id="sim">
-				<img src="../pic/tudou.png" alt="">
+				<img src="../pic/tudou.png" alt="" class="img-responsive" alt="Responsive image">
 				<p class="abs">
 					  土豆网公司成立于1998年11月， 是目前中国最大的互联网综合服务提供商之一，也是中国 服务用户最多的互联网企业之一。成立
 				</p>
