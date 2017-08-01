@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+<style>
+#main{
+	width: 1000px;
+	height: auto;
+	clear: both;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+#type{
+	border: 1px solid #D2D2D2;
+}
+.icon{
+	float: left;
+	margin: 5px;
+}
+tr{
+	width: auto;
+	height: auto;
+}
+.title{
+	width: 100%;
+	height: auto;
+	/*vertical-align: center;*/
+	background-color: #F4F4F4;
+	border: 1px solid #D2D2D2;
+	border-collapse:collapse; 
+	float: left;
+	box-sizing: border-box;
+	padding: 5px;
+}
+.content{
+	width: auto;
+	height: auto;
+	box-sizing: border-box;
+	border: 1px solid black;
+	float: left;
+	padding: 5px;
+	margin: 10px;
+}
+.num{
+	float: left;
+}
+.content>select{
+	display: block;
+	margin: auto 0 ;
+}
+</style>
+</head>
+<body>
+	<table id="main">
+		<tr class="title">
+			<td>
+			<img class="icon" src="../pic/box.png" alt="">
+			<p>选择箱型</p>
+		</td>
+		</tr>
+		<tr class="content">
+			<td>
+			<input type="radio" name="boxtype" value="suitecase">对口箱
+			<input type="radio" name="boxtype" value="airplane">飞机盒
+			<input type="radio" name="boxtype" value="hatbox">天地盖
+			<select name="查看详情" id="">
+			</td>
+		</tr>
+		<tr class="title">
+			<td>
+				确定尺寸
+			</td>
+		</tr>
+		<tr class="content">
+			<td>
+			<input type="radio" name="boxtype" value="suitecase">内径
+			<input type="radio" name="boxtype" value="airplane">外径
+			<div class="num"><p>长<input type="text">mm</p>
+			<p>长<input type="text">mm</p>
+			<p>长<input type="text">mm</p></div>
+			<div class="num"><p>宽<input type="text">mm</p>
+			<p>宽<input type="text">mm</p>
+			<p>宽<input type="text">mm</p></div>
+			<select name="查看详情" id="">
+			</td>
+		</tr>
+	</table>
+	<input type="text" style="width=10px;">
+</body>
+</html>

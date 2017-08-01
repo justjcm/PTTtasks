@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>包装页</title>
+<style>
+*{
+	font-family: '微软雅黑','黑体',sans-serif;
+	margin: 0;
+	padding: 0;
+}
+header{
+	width: 100%;
+	height: 30px;
+	background-color: #1376DC;
+	line-height: 20px;
+	color: white;
+	box-sizing: border-box;
+	padding: 5px;
+}	
+#tel{float: left;}
+#login,#signin{
+	float: right;
+	margin-left: 5px;
+}
+#nav{
+	width: auto;
+	height: 100px;
+	background-color: #F9F9F9;
+}
+nav{
+	float: right;
+	/*margin: 30px 0;*/
+}
+nav li{
+	width: auto;
+	height: 40px;
+	line-height: 40px;
+	list-style-type: none;
+	border: 1px solid #CACACA;
+	border-radius: 5px;
+	background-color: white;
+	float: left;
+	box-sizing: border-box;
+	margin: 30px;
+	padding: 0 10px;
+}
+#steps>img{
+	display: block;
+	float: right;
+	margin: 10px;
+}
+#main{
+	width: 1000px;
+	height: auto;
+	clear: both;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+#type,#size,#material{
+	width: 1000px;
+	border: 1px solid #D2D2D2;
+	background-color: #FBFCFF;
+	float: left;
+}
+.icon{
+	float: left;
+	margin: 5px;
+}
+.title{
+	width: 100%;
+	height: auto;
+	/*vertical-align: center;*/
+	background-color: #F4F4F4;
+	border-bottom: 1px solid #D2D2D2;
+	border-collapse:collapse; 
+	float: left;
+	box-sizing: border-box;
+	padding: 5px;
+}
+.content{
+	width: 800px;
+	height: auto;
+	box-sizing: border-box;
+	float: left;
+	padding: 5px;
+	margin: 10px;
+}
+#next{
+	width: 1000px;
+	height: 100px;
+	background-color: white;
+	clear: both;
+	vertical-align: center;
+}
+button{
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+	background-color: #CD494C;
+	border-style: solid;
+	border-radius: 5px;
+	clear: both;
+	margin: 0 auto;
+}
+/*#main:after{
+	clear: both;
+	content: "";
+	width: 100%;
+	height: 150px;
+
+}
+footer:before{
+	content: "";
+	height: 100px;
+	clear: both;
+}*/
+footer{
+	clear: both;
+	width: 100%;
+	height: 150px;
+	background-color: #F3F3F3;
+	margin-top: 400px;
+}
+footer li{
+	list-style-type: none;
+	float: left;
+	line-height: 150px;
+	margin: 10px;
+}
+footer img{
+	display: block;
+	float: right;
+	margin: 10px;
+}
+footer img::before{
+	display: block;
+	clear: both;
+	content: "daf";
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	vertical-align: center;
+	z-index: 999;
+}
+</style>
+</head>
+<body>
+	<header>
+		<p id="tel">客服电话：400-810-9151</p>
+		<p id="login">登录</p>
+		<p id="signin">注册</p>
+	</header>
+	<div id="nav">
+		<nav>
+			<ul>
+				<li>首页</li>
+				<li>在线定制</li>
+				<li>标准箱</li>
+				<li>关于我们</li>
+			</ul>
+		</nav>
+	</div>
+	<div id="steps">
+		<img src="../pic/steps.png" alt="">
+	</div>
+	
+	<div id="main">
+		<p>请您按照以下步骤来定制您的纸箱</p>
+		<div id="type">
+			<div class="title">
+				<img class="icon" src="../pic/box.png" alt="">
+				<p>选择箱型</p>
+			</div>
+			<div class="content">
+				<input type="radio" name="boxtype" value="suitecase">对口箱
+				<input type="radio" name="boxtype" value="airplane">飞机盒
+				<input type="radio" name="boxtype" value="hatbox">天地盖
+			</div>
+		</div>
+		<div id="size">
+			<div class="title">
+				<img class="icon" src="../pic/size.png" alt="">
+				<p>确定尺寸</p>
+			</div>
+			<div class="content">
+				<input type="radio" name="size" value="inner">内径
+				长<input type="text" name="num" size="5">mm
+				宽<input type="text" name="num" size="5">mm
+				高<input type="text" name="num" size="5">mm
+			</div>
+			<div class="content">
+				<input type="radio" name="size" value="outter" size="5">外径
+				长<input type="text" size="5">mm
+				宽<input type="text" size="5">mm
+				高<input type="text" size="5">mm
+			</div>
+		</div>
+		<div id="material">
+			<div class="title">
+				<img class="icon" src="../pic/sis.png" alt="">
+				<p>选择箱型</p>
+			</div>
+			<div class="content">
+				<input type="radio" name="material" value="A">A瓦优质
+				<input type="radio" name="material" value="B">B瓦优质
+				<input type="radio" name="material" value="E"><A></A>瓦优质
+				<input type="radio" name="material" value="AB">AB瓦优质
+				<input type="radio" name="material" value="BE">BE瓦优质
+			</div>
+			<div id="next">
+				<button>
+					下一步
+				</button>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<ul>
+			<li>51包装网-纸箱包装首选服务平台</li>
+			<li>关于我们</li>
+			<li>下单说明</li>
+		</ul>
+		<img src="../pic/qcode.png" alt="">
+	</footer>
+</body>
+
+</html>
